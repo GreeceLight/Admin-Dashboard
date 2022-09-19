@@ -156,7 +156,7 @@ li img{
 }
 .card{
     display: grid;
-    grid-template-rows: 30px auto 30px;
+    grid-template-rows: 30px 120px 30px;
     grid-template-columns: 100%;
     width: 300px;
     height: 150px;
