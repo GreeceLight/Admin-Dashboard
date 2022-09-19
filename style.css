@@ -113,15 +113,21 @@ li img{
 #buttons{
     grid-column: 2/4;
 
-    display: grid;
-    grid-template-columns: repeat(3, auto);
+    display: flex;
+    /* grid-template-columns: repeat(3, auto); */
+    flex-shrink: 0;
 
     justify-content: center;
-    align-content: center;
+    align-items: center;
     gap: 20px;
 }
 #buttons button{
-    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    min-width: 60px;
+    max-width: 120px;
     height: 40px;
     
     color: white;
@@ -231,16 +237,14 @@ li img{
 .trendyUsers{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: repeat(2, 40px);
+    grid-template-rows: repeat(2, 30px);
 
     width: 80%;
-    height: 50%;
 
     justify-items: start;
     align-items: center;
 
     font-size: 14px;
-    gap: 0px;
 }
 .trendyUsers img{
     grid-column: 1;
